@@ -1,0 +1,19 @@
+{
+  "name": "bigquery-parser",
+  "version": "0.0.1",
+  "description": "Parses responses from Google Bigquery to JSON object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icemilo/bigquery-parser.git"
+  },
+  "author": "KOO JAE SEUNG<icemilo@icemilo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icemilo/bigquery-parser/issues"
+  },
+  "homepage": "https://github.com/icemilo/bigquery-parser#readme"
+}
