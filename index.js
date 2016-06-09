@@ -1,7 +1,10 @@
 function parseResponse(response) {
+  if(!response instanceof Object){
+    throw new Error('Invalid parameter type');
+  }
   // Check if argument passed is valid
   if(response === undefined || response.schema === undefined || response.rows === undefined) {
-    throw new Error('Invalid argument');
+    throw new Error('Invalid parameter');
   }
 
   // Check if query job is completed
