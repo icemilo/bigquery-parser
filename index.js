@@ -3,8 +3,16 @@ function parseResponse(response) {
     throw new Error('Invalid parameter type');
   }
   // Check if argument passed is valid
-  if(response === undefined || response.schema === undefined || response.rows === undefined) {
+  if(response === undefined || response.schema === undefined) {
     throw new Error('Invalid parameter');
+  }
+
+  //Check if there are no rows return from Bigquery
+  if(response.schema !== undefined && response.rows === undefined) {
+    return {
+      totalRows: 0,
+      data: []
+    };
   }
 
   // Check if query job is completed

@@ -1,6 +1,6 @@
 {
   "name": "bigquery-parser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Parses responses from Google Bigquery to JSON object",
   "main": "index.js",
   "scripts": {
